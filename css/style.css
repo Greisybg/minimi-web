@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+html 
+{
+    background-image: url("img/fondo.png");
+    background-size:100px 150px;
+    font-family: 'Indie Flower';
+}
+
+div.head
+{
+    background-color: rgb(17, 116, 197);
+    padding: auto;
+}
+
+body.fondo
+{
+    background-color: #001f54;
+    /* background-image: url("../img/fondoAzul.png"); */
+}
+
+div.lineaMenu {
+    background: #001f54;
+}
+
+div.menu {
+    display: inline-block; 
+    width:fit-content;
+}
+ul ul {
+    position: absolute;
+    display: none;  
+}
+ul ul li {
+    display: block;
+} 
+
+.menu ul li a {
+    color: #fff;
+}
+
+.articulos li a {
+    color: #fff;
+}
+
+ul li:hover {
+    background: rgba(85, 171, 241, 0.685);
+}
+
+ul li:hover ul{
+    display: block;
+    background: rgb(17, 116, 197);
+    color: whitesmoke;
+}
+
+.fondoPieIndex {
+    background: #001f54;
+    color: white;
+
+}
+.fondoPiePaginas {
+    background: rgb(17, 116, 197);
+}
+.redes {
+    color:whitesmoke;
+}
+
+.pie nav center a {
+    color:#fff
+}
+
+body.fondoPaginas
+{
+    background-color: #001f54;
+    background-image: url("img/fondo.png");
+}
+
+div.titulo {
+    color: #fff;
+    background: #034078;
+}
+
+section.textosColor {
+    color: #fff;
+    text-align: center;
+    background-color: #001f54;
+}
+
+
+section.textosColor form fieldset {
+    display: inline-block;
+}
+
+div.regresar a {
+    color: #fff;
+}
+div.regresar a:visited {
+    color: #fff;
+}
+
+
+.div1{
+    font-family:'Indie Flower', cursive;
+    font-size: 40px;
+    background: #FEC968;
+    color: rgb(5, 34, 58);
+    height: 350px;
+    width: 700px;
+    margin: 100px auto;
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: 10px dashed rgb(24, 62, 94);
+    padding-bottom: 10px;
+  }
+
+  div p.oferta {
+      color: rgb(255, 38, 0);
+      font-size: 80px;
+      font-family: 'Indie Flower', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+
+  .divTable{
+	display: table;
+	width: 100%;
+    border-style: none;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 0px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+/* Grid intex */
+
+.grid-container-index {
+    background-image: url(../img/ladrillos2.jpg);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 2fr;
+
+}
+
+.grid-item-index {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.oferta {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 600px;
+    height: 200px;
+    border:#001f54 1px solid;
+    /* background-image: radial-gradient(#ad1429 20%, #f8e67b 80%); */
+    background-image: radial-gradient(blue 20%, black 90%);
+    border-radius: 20%;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+}
+
+/* Grid products */
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px 5px;
+    background-image: url(../img/ladrillos1.jpg);
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    grid-template-areas: "head"
+                         "titulo"
+                        "grid-productos"
+                        "footer";
+
+}
+
+.grid-productos img {
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border:#001f54 1px solid;
+    background-image: radial-gradient(blue 20%, black 80%);
+    border-radius: 50%;
+}
+
+    .grid-productos img:hover {
+    filter:drop-shadow(16px 16px 20px #ccc);
+    }
+
+@media (max-width: 700px) { 
+    .grid-productos{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .grid-items{
+        display: grid;
+    }
+    img.logo{
+        width: "200px";
+        height: "75px";
+    }
+    textarea.area {
+    
+        
+    }
+    
+}

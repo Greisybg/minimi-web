@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="fondoPaginas">
+    <header>
+        <center><img src="../img/minimioscuro.png" alt="logo" width="400" height="150"></center>
+        <br>
+        <div class="regresar">
+            <a href="../index.html">Volver al inicio</a>
+        </div>
+        <br>
+    </header>
+
+    <section class="textosColor">
+        <div class="titulo">
+            <hr>
+            <h3><center>Completá tus datos y en menos de 24 horas nos comunicaremos con vos</center></h3>
+            <hr>
+        </div>
+
+        <form action="/action_page.php">
+            <fieldset>
+                <legend><strong>Información de contacto</strong></legend>
+                <br>
+            
+                <label for="fname">Nombre y apellido:</label>
+                <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre y apellido" required>
+                <br><br>
+
+                <label for="email">Ingrese su email:</label>
+                <input type="email" id="email" name="email" validate required>
+                <br><br>
+
+                <label for="numero">Ingrese su num tlf:</label>
+                <input type="phone" id="numero" name="numero" required>
+                <br><br>
+
+                <textarea class="area" name="comentario" id="" cols="60" rows="10" placeholder="Ingrese un comentario si desea"></textarea>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </section>
+    <br><br><br><br><br><br><br><br>
+
+    <footer>
+        <div class="fondoPiePaginas">
+            <hr>
+            <center>
+                <h3 class="redes">Seguinos en nuestras redes sociales</h3>
+            </center>
+            <hr>
+        </div>
+        <div class="pie">
+            <nav>
+                <center><a href="./ubication.html">Ubicación</a>
+                    <a href="./contact.html">Contacto</a>
+                </center>
+            </nav>
+        </div>
+    </footer>
+
+    <br>
+</body>
+</html>
